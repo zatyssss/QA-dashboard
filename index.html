@@ -1,138 +1,163 @@
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 20px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC QA Digital Transformation Dashboard</title>
 
-    h1 {
-        text-align: center;
-        color: #333;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
 
-    h2 {
-        color: #444;
-    }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
 
-    .container {
-        max-width: 1200px;
-        margin: auto;
-    }
+        h2 {
+            color: #444;
+        }
 
-    .card {
-        background: white;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-    th,
-    td {
-        border: 1px solid #ddd;
-        padding: 10px;
-        text-align: left;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
 
-    th {
-        background-color: #f0f0f0;
-    }
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
 
-    .critical {
-        color: red;
-        font-weight: bold;
-    }
+        th {
+            background-color: #f0f0f0;
+        }
 
-    .upload-box {
-        padding: 20px;
-        border: 2px dashed #ccc;
-        text-align: center;
-        border-radius: 10px;
-    }
+        .critical {
+            color: red;
+            font-weight: bold;
+        }
 
-    textarea {
-        width: 100%;
-        margin-top: 10px;
-        padding: 10px;
-        box-sizing: border-box;
-    }
-</style>
-<h1>TNG eWallet QA Digital Transformation Dashboard</h1>
+        .upload-box {
+            padding: 20px;
+            border: 2px dashed #ccc;
+            text-align: center;
+            border-radius: 10px;
+        }
 
-<div class="card">
-    <h2>QA Scorecard Overview</h2>
+        textarea {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
 
-    <table>
-        <tr>
-            <th>Section</th>
-            <th>Main Evaluation Criteria</th>
-        </tr>
+<body>
 
-        <tr>
-            <td>1. Call Opening</td>
-            <td>Greeting, Customer Verification, Mandatory Verification</td>
-        </tr>
+<div class="container">
 
-        <tr>
-            <td>2. PDPA Compliance</td>
-            <td class="critical">PDPA & PCI DSS Compliance (Critical)</td>
-        </tr>
+    <h1>ABC QA Digital Transformation Dashboard</h1>
 
-        <tr>
-            <td>3. Call Management</td>
-            <td>Call Control, Probing, Empathy, Ownership</td>
-        </tr>
+    <div class="card">
+        <h2>QA Scorecard Overview</h2>
 
-        <tr>
-            <td>4. Solution Match</td>
-            <td>Accuracy, Alternative Solutions, SLA Communication</td>
-        </tr>
+        <table>
+            <tr>
+                <th>Section</th>
+                <th>Main Evaluation Criteria</th>
+            </tr>
 
-        <tr>
-            <td>5. Telephone Skills</td>
-            <td>Professionalism, Tone, Grammar, Hold Process</td>
-        </tr>
+            <tr>
+                <td>1. Call Opening</td>
+                <td>Greeting, Customer Verification, Mandatory Verification</td>
+            </tr>
 
-        <tr>
-            <td>6. Data Integrity</td>
-            <td>Zendesk Notes, Macro Selection, Escalation Accuracy</td>
-        </tr>
+            <tr>
+                <td>2. Data Privacy Compliance</td>
+                <td class="critical">PDPA & Security Compliance (Critical)</td>
+            </tr>
 
-        <tr>
-            <td>7. Call Exit</td>
-            <td>CSAT Offer, Standard Closing</td>
-        </tr>
+            <tr>
+                <td>3. Call Management</td>
+                <td>Call Control, Probing, Empathy, Ownership</td>
+            </tr>
 
-        <tr>
-            <td>8. WOW Factor</td>
-            <td>Customer Delight & Exceptional Service</td>
-        </tr>
-    </table>
-</div>
+            <tr>
+                <td>4. Solution Match</td>
+                <td>Accuracy, Alternative Solutions, SLA Communication</td>
+            </tr>
 
-<div class="card">
-    <h2>Call Transcript Review</h2>
+            <tr>
+                <td>5. Telephone Skills</td>
+                <td>Professionalism, Tone, Grammar, Hold Process</td>
+            </tr>
 
-    <div class="upload-box">
-        <p>Paste customer service transcript here for QA review.</p>
+            <tr>
+                <td>6. Data Integrity</td>
+                <td>Case Notes, Categorisation, Escalation Accuracy</td>
+            </tr>
 
-        <textarea
-            rows="10"
-            placeholder="Paste call transcript here..."></textarea>
+            <tr>
+                <td>7. Call Exit</td>
+                <td>Customer Feedback Offer, Standard Closing</td>
+            </tr>
+
+            <tr>
+                <td>8. WOW Factor</td>
+                <td>Customer Delight & Exceptional Service</td>
+            </tr>
+        </table>
     </div>
+
+    <div class="card">
+        <h2>Call Transcript Review</h2>
+
+        <div class="upload-box">
+            <p>Paste customer service transcript here for QA review.</p>
+
+            <textarea
+                rows="10"
+                placeholder="Paste call transcript here..."></textarea>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>AI QA Assistant</h2>
+
+        <p>
+            Use the AI Voice Assistant to review customer service interactions,
+            identify compliance issues, provide coaching recommendations,
+            and assess call quality performance.
+        </p>
+    </div>
+
 </div>
 
-<div class="card">
-    <h2>AI QA Assistant</h2>
+<elevenlabs-convai agent-id="agent_3901ktnrqjgffmjrxy8r29zthqyt"></elevenlabs-convai>
 
-    <p>
-        Use the ElevenLabs Voice Assistant to review customer service interactions,
-        identify compliance issues, provide coaching recommendations and assess call quality performance.
-    </p>
-</div>
+<script src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+        async
+        type="text/javascript"></script>
+
+</body>
+</html>
