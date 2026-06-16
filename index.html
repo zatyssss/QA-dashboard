@@ -1,42 +1,164 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>My First Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            background-color: #f4f4f4;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Digital Transformation Dashboard</title>
 
-        h1 {
-            color: #333;
-        }
+```
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 20px;
+    }
 
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    h2 {
+        color: #444;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f0f0f0;
+    }
+
+    .critical {
+        color: red;
+        font-weight: bold;
+    }
+
+    .upload-box {
+        padding: 20px;
+        border: 2px dashed #ccc;
+        text-align: center;
+        border-radius: 10px;
+    }
+</style>
+```
+
 </head>
+
 <body>
 
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple webpage.</p>
+<div class="container">
 
-    <button onclick="showMessage()">Click Me</button>
+```
+<h1>TNG eWallet QA Digital Transformation Dashboard</h1>
 
-    <script>
-        function showMessage() {
-            alert("Hello! Thanks for visiting my website.");
-        }
-    </script>
- <elevenlabs-convai agent-id="agent_3901ktnrqjgffmjrxy8r29zthqyt"></elevenlabs-convai>
-<script src="https://unpkg.com/@elevenlabs/convai-widget-embed"
-            async
-            type="text/javascript"></script>
+<div class="card">
+    <h2>QA Scorecard Overview</h2>
+
+    <table>
+        <tr>
+            <th>Section</th>
+            <th>Main Evaluation Criteria</th>
+        </tr>
+
+        <tr>
+            <td>1. Call Opening</td>
+            <td>Greeting, Customer Verification, Mandatory Verification</td>
+        </tr>
+
+        <tr>
+            <td>2. PDPA Compliance</td>
+            <td class="critical">PDPA & PCI DSS Compliance (Critical)</td>
+        </tr>
+
+        <tr>
+            <td>3. Call Management</td>
+            <td>Call Control, Probing, Empathy, Ownership</td>
+        </tr>
+
+        <tr>
+            <td>4. Solution Match</td>
+            <td>Accuracy, Alternative Solutions, SLA Communication</td>
+        </tr>
+
+        <tr>
+            <td>5. Telephone Skills</td>
+            <td>Professionalism, Tone, Grammar, Hold Process</td>
+        </tr>
+
+        <tr>
+            <td>6. Data Integrity</td>
+            <td>Zendesk Notes, Macro Selection, Escalation Accuracy</td>
+        </tr>
+
+        <tr>
+            <td>7. Call Exit</td>
+            <td>CSAT Offer, Standard Closing</td>
+        </tr>
+
+        <tr>
+            <td>8. WOW Factor</td>
+            <td>Customer Delight & Exceptional Service</td>
+        </tr>
+    </table>
+</div>
+
+<div class="card">
+    <h2>Call Transcript Review</h2>
+
+    <div class="upload-box">
+        <p>Paste customer service transcript here for QA review.</p>
+
+        <textarea
+            rows="10"
+            style="width:100%;"
+            placeholder="Paste call transcript here..."></textarea>
+    </div>
+</div>
+
+<div class="card">
+    <h2>AI QA Assistant</h2>
+
+    <p>
+        Use the ElevenLabs Voice Assistant to review customer service interactions,
+        identify compliance issues, provide coaching recommendations and assess
+        call quality performance.
+    </p>
+</div>
+```
+
+</div>
+
+<elevenlabs-convai agent-id="agent_3901ktnrqjgffmjrxy8r29zthqyt"></elevenlabs-convai>
+
+<script
+    src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+    async
+    type="text/javascript">
+</script>
+
 </body>
 </html>
 
