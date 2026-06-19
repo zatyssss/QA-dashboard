@@ -3,163 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABC QA Digital Transformation Dashboard</title>
+    <title>Next Stop with Zaty</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
         }
 
-        h1 {
+        header {
             text-align: center;
-            color: #333;
+            padding: 50px 20px;
+            background: #ffffff;
         }
 
-        h2 {
-            color: #444;
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #666;
         }
 
         .container {
             max-width: 1200px;
             margin: auto;
+            padding: 20px;
         }
 
         .card {
             background: white;
-            padding: 20px;
+            padding: 25px;
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        h2 {
+            color: #333;
         }
 
-        th,
-        td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f0f0f0;
-        }
-
-        .critical {
-            color: red;
-            font-weight: bold;
-        }
-
-        .upload-box {
-            padding: 20px;
-            border: 2px dashed #ccc;
-            text-align: center;
-            border-radius: 10px;
+        ul {
+            line-height: 1.8;
         }
 
         textarea {
             width: 100%;
-            margin-top: 10px;
             padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
             box-sizing: border-box;
         }
 
-        .voicebot-section {
-            margin-top: 30px;
+        .hero {
             text-align: center;
+            padding: 30px;
+        }
+
+        .voicebot-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+    <h1>✈️ Next Stop with Zaty</h1>
+    <p>Your AI Travel Companion</p>
+</header>
+
 <div class="container">
 
-    <h1>ABC QA Digital Transformation Dashboard</h1>
-
     <div class="card">
-        <h2>QA Scorecard Overview</h2>
+        <h2>🌍 Popular Travel Categories</h2>
 
-        <table>
-            <tr>
-                <th>Section</th>
-                <th>Main Evaluation Criteria</th>
-            </tr>
-
-            <tr>
-                <td>1. Call Opening</td>
-                <td>Greeting, Customer Verification, Mandatory Verification</td>
-            </tr>
-
-            <tr>
-                <td>2. Data Privacy Compliance</td>
-                <td class="critical">PDPA & Security Compliance (Critical)</td>
-            </tr>
-
-            <tr>
-                <td>3. Call Management</td>
-                <td>Call Control, Probing, Empathy, Ownership</td>
-            </tr>
-
-            <tr>
-                <td>4. Solution Match</td>
-                <td>Accuracy, Alternative Solutions, SLA Communication</td>
-            </tr>
-
-            <tr>
-                <td>5. Telephone Skills</td>
-                <td>Professionalism, Tone, Grammar, Hold Process</td>
-            </tr>
-
-            <tr>
-                <td>6. Data Integrity</td>
-                <td>Case Notes, Categorisation, Escalation Accuracy</td>
-            </tr>
-
-            <tr>
-                <td>7. Call Exit</td>
-                <td>Customer Feedback Offer, Standard Closing</td>
-            </tr>
-
-            <tr>
-                <td>8. WOW Factor</td>
-                <td>Customer Delight & Exceptional Service</td>
-            </tr>
-        </table>
+        <ul>
+            <li>🏝 Beach Getaways</li>
+            <li>🏔 Nature & Adventure</li>
+            <li>🏙 City Exploration</li>
+            <li>🍜 Food & Culture Trips</li>
+            <li>💰 Budget Travel</li>
+            <li>🧳 Solo Travel</li>
+        </ul>
     </div>
 
     <div class="card">
-        <h2>Call Transcript Review</h2>
+        <h2>📝 Plan Your Next Trip</h2>
 
-        <div class="upload-box">
-            <p>Paste customer service transcript here for QA review.</p>
+        <p>Tell the AI where you want to travel and what kind of experience you're looking for.</p>
 
-            <textarea rows="10" placeholder="Paste call transcript here..."></textarea>
-        </div>
+        <textarea rows="8" placeholder="Example: I want a 5-day trip to Japan with a budget of RM5,000..."></textarea>
     </div>
 
     <div class="card">
-        <h2>AI QA Assistant</h2>
+        <h2>🤖 AI Travel Assistant</h2>
 
         <p>
-            Use the AI Voice Assistant to review customer service interactions,
-            identify compliance issues, provide coaching recommendations,
-            and assess call quality performance.
+            Ask for destination recommendations, itineraries,
+            travel tips, budget planning, food suggestions,
+            and hidden gems around the world.
         </p>
     </div>
 
     <div class="voicebot-section">
-        <h2>ABC AI Voice Assistant</h2>
+        <h2>🎙 Talk to Zaty's Travel Assistant</h2>
 
         <elevenlabs-convai agent-id="agent_4901kvey5tfhf0ab5xw9x5f3n5g7"></elevenlabs-convai>
     </div>
 
 </div>
+
+<footer>
+    © 2026 Next Stop with Zaty | Explore the World One Stop at a Time
+</footer>
 
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed"
         async
@@ -167,3 +135,4 @@
 
 </body>
 </html>
+
