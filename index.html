@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +68,11 @@
             padding: 10px;
             box-sizing: border-box;
         }
+
+        .voicebot-section {
+            margin-top: 30px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -135,9 +139,7 @@
         <div class="upload-box">
             <p>Paste customer service transcript here for QA review.</p>
 
-            <textarea
-                rows="10"
-                placeholder="Paste call transcript here..."></textarea>
+            <textarea rows="10" placeholder="Paste call transcript here..."></textarea>
         </div>
     </div>
 
@@ -151,9 +153,13 @@
         </p>
     </div>
 
-</div>
+    <div class="voicebot-section">
+        <h2>ABC AI Voice Assistant</h2>
 
-<elevenlabs-convai agent-id="agent_3901ktnrqjgffmjrxy8r29zthqyt"></elevenlabs-convai>
+        <elevenlabs-convai agent-id="agent_4901kvey5tfhf0ab5xw9x5f3n5g7"></elevenlabs-convai>
+    </div>
+
+</div>
 
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed"
         async
