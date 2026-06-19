@@ -1,5 +1,5 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -69,14 +69,6 @@ header p{
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-h2{
-    margin-top:0;
-}
-
-ul{
-    line-height:2;
-}
-
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -85,20 +77,20 @@ ul{
 
 .gallery img{
     width:100%;
-    height:280px;
+    height:300px;
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    transition:0.3s;
 }
 
 .gallery img:hover{
     transform:scale(1.03);
+    transition:0.3s;
 }
 
 .voicebot-section{
     text-align:center;
-    padding-bottom:50px;
+    padding:40px;
 }
 
 .voicebot-section h2{
@@ -113,7 +105,6 @@ footer{
 }
 
 </style>
-
 </head>
 
 <body>
@@ -124,70 +115,34 @@ footer{
     <h1>Next Stop with Zaty</h1>
     <p>Explore The World One Stop At A Time ✈️</p>
 
-```
-<img src="zaty.jpeg" alt="Zaty" class="profile-pic">
-```
-
+    <img src="zaty.jpeg" alt="Zaty" class="profile-pic">
 </header>
 
 <div class="container">
 
 <div class="card">
     <h2>🇯🇵 Japan Winter Adventure 2026</h2>
-
-```
-<p><strong>Travel Dates:</strong> 30 January 2026 - 8 February 2026</p>
-
-<p>
-    Tokyo • Mount Fuji • Echigo Yuzawa • Kanazawa • Shirakawago • Osaka • Kobe • Nara • Kyoto
-</p>
-```
-
-</div>
-
-<div class="card">
-    <h2>🗓️ Travel Itinerary</h2>
-
-```
-<ul>
-    <li>✈️ Day 1 - Kuala Lumpur → Tokyo Haneda</li>
-    <li>🗻 Day 2 - Mount Fuji & Kawaguchiko</li>
-    <li>🏙️ Day 3 - Tokyo City Exploration</li>
-    <li>❄️ Day 4 - Echigo Yuzawa Snow Experience</li>
-    <li>🏯 Day 5 - Kanazawa</li>
-    <li>🌨️ Day 6 - Shirakawago</li>
-    <li>🍜 Day 7 - Osaka</li>
-    <li>🦌 Day 8 - Kobe & Nara</li>
-    <li>⛩️ Day 9 - Kyoto</li>
-    <li>✈️ Return to Kuala Lumpur</li>
-</ul>
-```
-
+    <p><strong>Travel Dates:</strong> 30 January 2026 - 8 February 2026</p>
 </div>
 
 <div class="card">
     <h2>📸 My Japan Travel Gallery</h2>
 
-```
-<div class="gallery">
-    <img src="japan1.jpeg" alt="Japan Photo 1">
-    <img src="japan2.jpeg" alt="Japan Photo 2">
-    <img src="japan3.jpeg" alt="Japan Photo 3">
-    <img src="japan4.jpeg" alt="Japan Photo 4">
-</div>
-```
-
+    <div class="gallery">
+        <img src="japan1.jpeg" alt="Japan Photo 1">
+        <img src="japan2.jpeg" alt="Japan Photo 2">
+        <img src="japan3.jpeg" alt="Japan Photo 3">
+        <img src="japan4.jpeg" alt="Japan Photo 4">
+    </div>
 </div>
 
 </div>
 
 <div class="voicebot-section">
 
-```
-<h2>🎙️ Chat With Zaty</h2>
+    <h2>🎙️ Chat With Zaty</h2>
 
-<elevenlabs-convai agent-id="agent_4901kvey5tfhf0ab5xw9x5f3n5g7"></elevenlabs-convai>
-```
+    <elevenlabs-convai agent-id="agent_4901kvey5tfhf0ab5xw9x5f3n5g7"></elevenlabs-convai>
 
 </div>
 
@@ -203,3 +158,4 @@ type="text/javascript"></script>
 
 </body>
 </html>
+```
