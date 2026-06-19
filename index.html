@@ -1,132 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Next Stop with Zaty</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f8;
-            margin: 0;
-            padding: 0;
-        }
+<title>Next Stop with Zaty</title>
 
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background: #ffffff;
-        }
+<style>
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('zaty.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
 
-        header p {
-            font-size: 18px;
-            color: #666;
-        }
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255,255,255,0.7);
+}
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
+header h1 {
+    font-size: 50px;
+    margin: 0;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
 
-        h2 {
-            color: #333;
-        }
+.card {
+    background: rgba(255,255,255,0.9);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
 
-        ul {
-            line-height: 1.8;
-        }
+h2 {
+    color: #333;
+}
 
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
+ul {
+    line-height: 2;
+}
 
-        .hero {
-            text-align: center;
-            padding: 30px;
-        }
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-        .voicebot-section {
-            text-align: center;
-            margin-top: 30px;
-        }
+.voicebot-section {
+    text-align: center;
+    margin-top: 30px;
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-        }
-    </style>
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
     <h1>✈️ Next Stop with Zaty</h1>
-    <p>Your AI Travel Companion</p>
 </header>
 
 <div class="container">
 
     <div class="card">
-        <h2>🌍 Popular Travel Categories</h2>
+        <h2>🌍 Popular Destinations</h2>
 
         <ul>
-            <li>🏝 Beach Getaways</li>
-            <li>🏔 Nature & Adventure</li>
-            <li>🏙 City Exploration</li>
-            <li>🍜 Food & Culture Trips</li>
-            <li>💰 Budget Travel</li>
-            <li>🧳 Solo Travel</li>
+            <li>🇯🇵 Japan</li>
+            <li>🇰🇷 South Korea</li>
+            <li>🇹🇭 Thailand</li>
+            <li>🇸🇬 Singapore</li>
+            <li>🇮🇩 Bali</li>
+            <li>🇻🇳 Vietnam</li>
         </ul>
     </div>
 
     <div class="card">
-        <h2>📝 Plan Your Next Trip</h2>
+        <h2>📝 Travel Planner</h2>
 
-        <p>Tell the AI where you want to travel and what kind of experience you're looking for.</p>
+        <p>Tell me where you want to travel and your budget.</p>
 
-        <textarea rows="8" placeholder="Example: I want a 5-day trip to Japan with a budget of RM5,000..."></textarea>
+        <textarea rows="8" placeholder="Example: I want a 5-day trip to Japan with a budget of RM5000..."></textarea>
     </div>
 
     <div class="card">
         <h2>🤖 AI Travel Assistant</h2>
 
         <p>
-            Ask for destination recommendations, itineraries,
-            travel tips, budget planning, food suggestions,
-            and hidden gems around the world.
+            Ask for travel recommendations, itineraries,
+            hotel suggestions, food recommendations,
+            and travel tips.
         </p>
     </div>
 
     <div class="voicebot-section">
-        <h2>🎙 Talk to Zaty's Travel Assistant</h2>
+        <h2>🎙️ Talk With Zaty Travel Assistant</h2>
 
         <elevenlabs-convai agent-id="agent_4901kvey5tfhf0ab5xw9x5f3n5g7"></elevenlabs-convai>
+
     </div>
 
 </div>
 
 <footer>
-    © 2026 Next Stop with Zaty | Explore the World One Stop at a Time
+    Explore The World With Zaty ✈️
 </footer>
 
 <script src="https://unpkg.com/@elevenlabs/convai-widget-embed"
